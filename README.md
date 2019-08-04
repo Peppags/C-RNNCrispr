@@ -1,6 +1,6 @@
 # C-RNNCrispr 
 ## Overview
-C-RNNCrispr is a deep learning-based method for CRISPR/Cas9 guide RNA (gRNA) on-target cleavage efficacy prediction.
+C-RNNCrispr is a framework for CRISPR/Cas9 single guide RNA (sgRNA) on-target activity prediction.
 
 ## Pre-requisite:  
 * **Ubuntu 16.04**
@@ -30,7 +30,13 @@ Download CUDA tarball on https://developer.nvidia.com/compute/cuda/8.0/Prod2/loc
 Download cuDNN tarball on https://developer.nvidia.com/cudnn  
 
 ## Content
-* **./data:** the testing examples with sgRNA sequence and corresponding epigenetic features and label indicating the on-target cleavage efficacy  
-* **./weights/C_RNNCrispr_weights.h5:** the well-trained weights for our model    
-* **./C_RNNCrispr_test.py:** the python code, it can be ran to reproduce our results  
+* **./data/input_example.csv:** The testing examples with sgRNA sequence and corresponding epigenetic features and label indicating the on-target cleavage efficacy  
+* **./weights/C_RNNCrispr_weights.h5:** The well-trained weights for our model    
+* **./C_RNNCrispr_test.py:** The Python code, it can be ran to reproduce our results
+* **./result/output_example.csv:** The prediction results
+**Note:**  
+* The input_example.csv can replaced or modified to include gRNA sequence and four epigenetic features of interest  
+
+## Testing C-RNNCrispr with test set
+python C_RNNCrispr_test.py
 
