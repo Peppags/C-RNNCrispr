@@ -30,10 +30,10 @@ Download CUDA tarball on https://developer.nvidia.com/compute/cuda/8.0/Prod2/loc
 Download cuDNN tarball on https://developer.nvidia.com/cudnn  
 
 ## Content  
-* **./data/input_example.csv:** The testing examples with sgRNA sequence and corresponding epigenetic features and label indicating the on-target cleavage efficacy    
-* **./weights/C_RNNCrispr_weights.h5:** The well-trained weights for our model      
-* **./C_RNNCrispr_test.py:** The Python code, it can be ran to reproduce our results  
-* **./result/output_example.csv:** The prediction results  
+* **data/input_example.csv:** The testing examples with sgRNA sequence and corresponding epigenetic features and label indicating the on-target cleavage efficacy    
+* **weights/C_RNNCrispr_weights.h5:** The well-trained weights for our model      
+* **C_RNNCrispr_test.py:** The Python code, it can be ran to reproduce our results  
+* **result/output_example.csv:** The prediction results  
 #### **Note:**    
 The input_example.csv can replaced or modified to include gRNA sequence and four epigenetic features of interest  
 
